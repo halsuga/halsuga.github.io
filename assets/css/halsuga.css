@@ -31,7 +31,7 @@ code {
 }
 
 header {
-  background: #0af;
+  background: #136a8a;
   box-shadow: 0 0 20px rgba(0, 0, 0, .3);
   border-radius: 0 0 10px 10px;
   padding: 0 .5em;
@@ -39,7 +39,7 @@ header {
 
 footer {
   display: block;
-  background: #0af;
+  background: #136a8a;
   box-shadow: 0 0 20px rgba(0, 0, 0, .3);
   border-radius: 10px 10px 0 0;
   padding: 2em;
@@ -96,7 +96,7 @@ article p, article ul {
 }
 
 .avatar {
-  background: rgba(255, 255, 255, .4);
+  background: rgba(255, 255, 255 .0);
   width: 80%;
   max-width: 120px;
   border-radius: 5px;
@@ -125,7 +125,7 @@ article p, article ul {
   header::after {
     content: "";
     display: table;
-    clear: both; 
+    clear: both;
   }
   header * {
     margin: 0;
