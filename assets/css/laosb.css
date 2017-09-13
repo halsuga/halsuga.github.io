@@ -1,0 +1,162 @@
+@import url('https://fonts.proxy.ustclug.org/css?family=Montserrat:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: Montserrat;
+}
+
+
+h3 {
+  line-height: 3em;
+}
+
+blockquote[standout] {
+  font-size: 2rem;
+  line-height: 2.1rem;
+  margin: 1.5rem;
+}
+
+code {
+  font-family: Monaco, monospace;
+  color: rgba(0, 0, 0, .7);
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+header {
+  background: #0af;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+  border-radius: 0 0 10px 10px;
+  padding: 0 .5em;
+}
+
+footer {
+  display: block;
+  background: #0af;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+  border-radius: 10px 10px 0 0;
+  padding: 2em;
+  text-align: center;
+}
+
+footer * {
+  color: #fff;
+}
+
+header * {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+header nav {
+  margin-top: 1em;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 0 .5em;
+  line-height: 3em;
+  transition: .3s all ease;
+}
+
+header nav a:hover, header nav a:active, header nav a.active {
+  box-shadow: 0 -3px 0 #fff inset;
+}
+
+article {
+  opacity: 0;
+  border-radius: 10px;
+  /* box-shadow: 0 0 20px 5px rgba(0, 0, 0, .3); */
+  margin: 0;
+  height: 0;
+  padding: 0 2em;
+  transition: .7s all ease;
+  overflow: hidden;
+}
+
+article.active {
+  opacity: 1;
+  margin: 2em 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+  padding: 2em;
+  height: auto;
+  min-height: 70vh;
+}
+
+article p, article ul {
+  margin-bottom: 1.5em
+}
+
+.avatar {
+  background: rgba(255, 255, 255, .4);
+  width: 80%;
+  max-width: 120px;
+  border-radius: 5px;
+  margin: 2em 0;
+}
+
+.laosb-heart {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 1.5em;
+  transition: .3s all cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.laosb-heart:hover, .laosb-heart:active {
+  transform: scale(2, 1.5) rotate(-90deg);
+  letter-spacing: -4px;
+  color: #f44336;
+}
+
+@media (max-width: 600px) {
+  header {
+    position: relative;
+    text-align: justify;
+    padding-right: 0;
+  }
+  header::after {
+    content: "";
+    display: table;
+    clear: both; 
+  }
+  header * {
+    margin: 0;
+  }
+  header div {
+    position: relative;
+    display: inline-block;
+    width: 65%;
+  }
+  header nav {
+    width: 35%;
+    float: right;
+    padding-bottom: 15px;
+  }
+  header nav a {
+    display: block;
+    line-height: 2.5em;
+    text-align: right;
+    padding-right: 20px;
+  }
+  header nav a:hover, header nav a:active, header nav a.active {
+    box-shadow: -3px 0 0 #fff inset;
+  }
+  article {
+    transition: none !important;
+    /* Disable transitions on mobile phones, because the animation is not that fluent on mobile devices  */
+  }
+  blockquote[standout] {
+    margin: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+  }
+}
